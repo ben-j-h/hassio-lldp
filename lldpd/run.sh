@@ -10,4 +10,5 @@ if bashio::supervisor.ping; then
 fi
 
 echo "configure system hostname ${HOSTNAME}" > /etc/lldpd.conf
+echo "configure system capabilities enabled station" >> /etc/lldpd.conf
 exec lldpd -d
